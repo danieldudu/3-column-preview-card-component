@@ -17,9 +17,6 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-}
-
-body .attribution {
   font-size: 1.5rem;
 }
 
@@ -69,12 +66,14 @@ body .attribution {
 
 .card-container .card {
   padding: 6rem 5rem;
+  max-width: 350px;
 }
 
 .card-container .card .card__title {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
+  text-transform: uppercase;
   color: #f2f2f2;
 }
 
@@ -88,7 +87,7 @@ body .attribution {
   text-decoration: none;
   padding: 1rem 2rem;
   background-color: #f2f2f2;
-  border-radius: 1.3rem;
+  border-radius: 1.8rem;
 }
 
 .card-container .card .btn:hover {
@@ -145,6 +144,12 @@ body .attribution {
   .card-container .luxury {
     border-bottom-left-radius: 0;
     border-top-right-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sedan, .suv, .luxury {
+    max-width: 30rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

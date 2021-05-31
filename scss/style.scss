@@ -31,10 +31,7 @@ body {
   background-color: $light-white;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-
-  .attribution {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
 }
 
 // Wrapper centering 
@@ -69,7 +66,7 @@ body {
 
   .card {
     padding: 6rem 5rem;
-    // min-height: 40vh;
+    max-width: 350px;
    
     
     
@@ -79,6 +76,7 @@ body {
       font-family: 'Big Shoulders Display', sans-serif;
       font-weight: 700;
       font-size: 3.5rem;
+      text-transform: uppercase;
       color: $light-gray;
     }
 
@@ -92,7 +90,7 @@ body {
       text-decoration: none;
       padding: 1rem 2rem;
       background-color: $light-gray;
-      border-radius: 1.3rem;
+      border-radius: 1.8rem;
 
       &:hover {
         background:none;
@@ -153,3 +151,8 @@ body {
   
 }
 
+@media screen and (min-width: 1024px){
+  .sedan, .suv, .luxury {
+    max-width: 30rem;
+  }
+}
